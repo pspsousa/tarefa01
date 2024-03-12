@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class Exercicio06 {
 	public static void main(String[] args) {
-		//Escreva um algoritmo para ler dois valores do teclado e exibir como resposta a divisão dos valores.
+		//Algoritmo para ler dois valores do teclado e exibir como resposta a divisão dos valores.
 		try {
-			Scanner sc = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 			
-			System.out.println("Vamos fazer a divisao dos dois valores!");
+			System.out.println("Vamos fazer a divisao de dois valores!");
 			System.out.print("Digite o primeiro Valor: ");
-			float primeiroValor = sc.nextFloat();
+			float Valor1 = scanner.nextFloat();
 			System.out.print("Digite o segundo Valor: ");
-			float segundoValor = sc.nextFloat();
+			float Valor2 = scanner.nextFloat();
 			
-			float divisao = primeiroValor / segundoValor;
-			System.out.println("A divisao dos valores = " + divisao);
-			sc.close();
+			float Divisao = Valor1 / Valor2;
+			System.out.println("O resultado é = " + Divisao);
+			scanner.close();
 		} catch (Exception e) {
-			System.out.println("Digite um valor valido!");
+			System.out.println("Valor invalido!");
 		}
 	}
 }
