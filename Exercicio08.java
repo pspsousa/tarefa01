@@ -3,22 +3,22 @@ import java.util.Scanner;
 
 public class Exercicio08 {
 	public static void main(String[] args) {
-		// Escreva um algoritmo para ler as dimensões de um triângulo (base e altura), calcular e escrever a área do triângulo. Dica a=b.h/2
+		// Algoritmo para ler as dimensões de um triângulo (base e altura), calcular e escrever a área do triângulo. Dica a=b.h/2
 		try {
-			Scanner sc = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 			
-			System.out.println("Vamos descobrir a area do triangulo!");
+			System.out.println("Vamos calcular a area do triangulo!");
 			System.out.print("Digite a base do triangulo: ");
-			float baseTriangulo = sc.nextFloat();
+			float Base = scanner.nextFloat();
 			
 			System.out.print("Digite a altura do triangulo: ");
-			float alturaTriangulo = sc.nextFloat();
+			float Altura = scanner.nextFloat();
 			
-			float calc = (baseTriangulo * alturaTriangulo) / 2;
-			System.out.println("A area do triangulo (" + baseTriangulo + " * " + alturaTriangulo + ")/2 = " + calc);
-			sc.close();
+			float Calculo = (Base * Altura) / 2;
+			System.out.println("A area do triangulo (" + Base + " * " + Altura + ")/2 = " + Calculo);
+			scanner.close();
 		} catch (Exception e) {
-			System.out.println("Digite um valor valido!");
+			System.out.println("Valor invalido!");
 		}
 	}
 	
