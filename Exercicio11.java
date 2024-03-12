@@ -17,7 +17,7 @@ public class Exercicio11 {
 			float Altura = scanner.nextFloat();
 			
 			float Calculo = (BaseMaior + BaseMenor) * Altura / 2;
-			System.out.println("A area do losango (" + BaseMaior + " + " + BseMenor + ")*" + Altura + "/2 = " + Calculo);
+			System.out.println("A area do losango (" + BaseMaior + " + " + BaseMenor + ")*" + Altura + "/2 = " + Calculo);
 			scanner.close();
 		} catch (Exception e) {
 			System.out.println("Valor invalido!");
