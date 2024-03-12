@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class Exercicio04 {
 	public static void main(String[] args) {
-		//  Escreva um algoritmo para ler dois valores do teclado e exibir como resposta a subtração dos valores.
+		//  Algoritmo para ler dois valores do teclado e exibir como resposta a subtração dos valores.
 		try {
-			Scanner sc = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 			
 			System.out.println("Vamos fazer a subtracao dos dois valores!");
 			System.out.print("Digite o primeiro Valor: ");
-			int primeiroValor = sc.nextInt();
+			int Valor1 = scanner.nextInt();
 			System.out.print("Digite o segundo Valor: ");
-			int segundoValor = sc.nextInt();
+			int Valor2 = scanner.nextInt();
 			
-			int subtracao = primeiroValor - segundoValor;
-			System.out.println("A subtracao dos valores = " + subtracao);
-			sc.close();
+			int Subtracao = Valor1 - Valor2;
+			System.out.println("Resultado = " + Subtracao);
+			scanner.close();
 		} catch (Exception e) {
-			System.out.println("Digite um valor valido!");
+			System.out.println("Valor invalido!");
 		}
 	}
 	
